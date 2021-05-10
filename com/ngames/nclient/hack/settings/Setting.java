@@ -1,0 +1,19 @@
+package com.ngames.nclient.hack.settings;
+
+public abstract class Setting {
+   public int id;
+   public String name;
+   public Settings type;
+
+   public Setting(String name, Settings type) {
+      this.type = type;
+      this.name = name;
+   }
+
+   public Settings getType() {
+      return this.type;
+   }
+
+   public void onUpdate() {
+   }
+}
